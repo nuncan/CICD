@@ -18,13 +18,14 @@ provider:
   name: aws
   runtime: nodejs6.10
   region: us-east-1
+  stage: dev
 
 # The `functions` block defines what code to deploy
 functions:
   helloNike:
-    handler: handler.helloNike
+    handler: handler.HelloNike
     events:
       - http:
-          path: hello-Nike
+          path: hello
           method: get
           cors: true

@@ -4,14 +4,14 @@ const helloNike = require('./lib/hello-Nike');
 
 module.exports.HelloNike = (event, context, callback) => {
 
-  var hello = new helloNike();
+  var hello = new helloNike().greetings(event);
 
   const response = {
     statusCode: 200,
     headers: {
-      'Access-Control-Allow-Origin': '*', // Required for CORS support to work
+      'Access-Control-Allow-Origin': '*',
     },
-    body: JSON.stringify(hello.greetings(event)),
+    body: event,
   };
 
   callback(null, response);

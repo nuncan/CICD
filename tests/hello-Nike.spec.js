@@ -21,7 +21,7 @@ describe('greetings', () => {
     var event = {};
     var hello = new HelloNike();
 
-    it('should call sayHello and return message', () => {
-        expect(hello.greetings(event).message).toBe(`Go Serverless v1.0! Your function executed successfully! Event: ${JSON.stringify(event)}`);
+    it('should call greetings and return message', () => {
+        expect(hello.greetings(event).message).toBe('Your CI/CD Build Passed Woo!');
     });
 });
