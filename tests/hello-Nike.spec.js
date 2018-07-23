@@ -1,3 +1,4 @@
+const expect = require("jest");
 
 const helloNike = require('../handler').HelloNike;
 describe('helloNike', () => {
@@ -10,7 +11,7 @@ describe('helloNike', () => {
             console.log(data);
             resp = data;
             done();
-        }
+        };
         helloNike(event, context, callback);
         expect(resp.statusCode).toBe(200);
     });
