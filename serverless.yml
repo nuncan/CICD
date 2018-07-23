@@ -17,6 +17,7 @@ package:
 provider:
   name: aws
   runtime: nodejs6.10
+  region: us-east-1
 
 # The `functions` block defines what code to deploy
 functions:

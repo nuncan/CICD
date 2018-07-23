@@ -1,5 +1,5 @@
 {
-  "name": "hello-nike-ci",
+  "name": "ci-cd-pipeline-nike",
   "version": "1.0.0",
   "description": "Hello World serverless app with tests",
   "main": "handler.js",
@@ -22,7 +22,5 @@
       "html",
       "text"
     ]
-  },
-  "author": "Rupak Ganguly",
-  "license": "MIT"
+  }
 }
