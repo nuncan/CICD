@@ -30,10 +30,9 @@ jobs:
       # deploy app            
       - run:
           name: Deploy application 
-          command: serverless deploy -v
+          command: sls deploy -v
 
       - save_cache:
           paths:
             - node_modules
           key: dependencies-cache-{{ checksum "package.json" }}
-        
