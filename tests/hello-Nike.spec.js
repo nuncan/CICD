@@ -1,5 +1,3 @@
-const expect = require("jest");
-
 const helloNike = require('../handler').HelloNike;
 describe('helloNike', () => {
     var event = {};
