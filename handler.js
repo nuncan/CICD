@@ -11,7 +11,7 @@ module.exports.HelloNike = (event, context, callback) => {
     headers: {
       'Access-Control-Allow-Origin': '*',
     },
-    body: hello,
+    body: event,
   };
 
   callback(null, response);
