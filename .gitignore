@@ -6,4 +6,7 @@ jspm_packages
 .serverless
 
 .vscode
+settings.json
 coverage
+
+package-lock.json

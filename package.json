@@ -1,5 +1,5 @@
 {
-  "name": "ci-cd-pipeline-nike",
+  "name": "ci-cd-pipeline-example",
   "version": "1.0.0",
   "description": "Hello World serverless app with tests",
   "main": "handler.js",
@@ -9,7 +9,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "jest": "^21.2.1"
+    "jest": "^23.6.0"
   },
   "scripts": {
     "test": "jest"

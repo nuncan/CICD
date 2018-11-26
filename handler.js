@@ -1,10 +1,10 @@
 'use strict';
 
-const helloNike = require('./lib/hello-Nike');
+const testRunner = require('./lib/testRunner');
 
-module.exports.HelloNike = (event, context, callback) => {
+module.exports.Index = (event, context, callback) => {
 
-  var hello = new helloNike().greetings(event);
+  var hello = new testRunner().greetings(event);
 
   const response = {
     statusCode: 200,

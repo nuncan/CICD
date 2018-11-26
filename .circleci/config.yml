@@ -16,6 +16,7 @@ jobs:
             - dependencies-cache-{{ checksum "package.json" }}
             - dependencies-cache
 
+      # Install packages
       - run:
           name: Install Serverless CLI and dependencies
           command: |
